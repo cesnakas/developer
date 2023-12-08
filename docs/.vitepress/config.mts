@@ -48,7 +48,7 @@ export default defineConfig({
     },
 
     footer: {
-      // message: 'Released under the MIT License.',
+      message: 'Released under the MIT License.',
       copyright: 'Copyright © ' + new Date().getFullYear()
     }
   }
