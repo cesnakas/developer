@@ -2,11 +2,12 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/developer/',
+  cleanUrls: true,
+
   // lang: 'ru',
   title: 'Sergei Česnakas',
   description: 'Sergei Česnakas — Web Developer, Front-end Web Developer',
-
-  cleanUrls: true,
 
   locales: {
     root: { label: 'English', lang: 'en-US' },
