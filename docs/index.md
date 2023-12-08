@@ -1,14 +1,24 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: Developer Kit
+title: Sergei Česnakas
 titleTemplate: false
-description: Developer Kit
+description: Sergei Česnakas
 
 hero:
-  name: 'Developer Kit'
-  text: ''
-  tagline: WebDev tools
+  name: Sergei Česnakas
+  text: —
+  tagline: My great project tagline
+  image:
+    src: images/s.cesnakas.png
+    alt: Sergei Česnakas
+  actions:
+    - theme: brand
+      text: Markdown Examples
+      link: /markdown-examples
+    - theme: alt
+      text: API Examples
+      link: /api-examples
 
 features:
   - title: Feature A
