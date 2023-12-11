@@ -5,6 +5,17 @@ export default defineConfig({
   base: '/developer/',
   cleanUrls: true,
 
+  sitemap: {
+    hostname: 'https://cesnakas.github.io/developer/'
+  },
+
+  head: [
+    ['link', { rel: 'icon', href: 'favicon.ico' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''}],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap' }]
+  ],
+
   // lang: 'ru',
   title: 'Sergei Česnakas',
   description: 'Sergei Česnakas — Web Developer, Front-end Web Developer',
@@ -22,7 +33,24 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Bitrix', link: '/bitrix/' },
+      { text: 'Skills', link: '/#skills' },
+      { text: 'Experience', link: '#experience' },
+      { text: 'Work', link: '/#work' },
+      { text: 'Docs',
+        items: [
+          {
+            items: [
+              { text: 'Sass', link: '/docs/sass/' },
+              { text: 'JavaScript', link: '/docs/javascript/' },
+            ],
+          },
+          {
+            items: [
+              { text: 'Bitrix', link: '/bitrix/' }
+            ]
+          },
+        ]
+      },
     ],
 
     socialLinks: [
